@@ -8,6 +8,7 @@ contributions welcome! :relaxed:
 ## table of contents
 - [set 1: basics](#set-1-basics)
   - [challenge 1: convert hex to base64](#challenge-1-convert-hex-to-base64)
+  - [challenge 2: fixed xor](#challenge-2-fixed-xor)
 
 ## set 1: basics
 ### __challenge 1__: convert hex to base64
@@ -16,6 +17,8 @@ contributions welcome! :relaxed:
 - [Base64 (Wikipedia)](https://en.wikipedia.org/wiki/Base64)
 
 ### __challenge 2__: fixed xor
+- [Exclusive or (Wikipedia)](https://en.wikipedia.org/wiki/Exclusive_or)
+
 ### __challenge 3__: single-byte xor cipher
 ### __challenge 4__: detect single-character xor
 ### __challenge 5__: implement repeating-key xor

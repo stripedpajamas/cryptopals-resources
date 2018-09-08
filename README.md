@@ -9,6 +9,12 @@ contributions welcome! :relaxed:
 - [set 1: basics](#set-1-basics)
   - [challenge 1: convert hex to base64](#challenge-1-convert-hex-to-base64)
   - [challenge 2: fixed xor](#challenge-2-fixed-xor)
+  - [challenge 3: single-byte xor cipher](#challenge-3-single-byte-xor-cipher)
+  - [challenge 4: detect single-character xor](#challenge-4-detect-single-character-xor)
+  - [challenge 5: implement repeating-key xor](#challenge-5-implement-repeating-key-xor)
+  - [challenge 6: break repeating-key xor](#challenge-6-break-repeating-key-xor)
+  - [challenge 7: aes in ecb mode](#challenge-7-aes-in-ecb-mode)
+  - [challenge 8: detect aes in ecb mode](#challenge-8-detect-aes-in-ecb-mode)
 
 ## set 1: basics
 ### __challenge 1__: convert hex to base64
@@ -20,11 +26,29 @@ contributions welcome! :relaxed:
 - [Exclusive or (Wikipedia)](https://en.wikipedia.org/wiki/Exclusive_or)
 
 ### __challenge 3__: single-byte xor cipher
+- [Letter frequency (Wikipedia)](https://en.wikipedia.org/wiki/Letter_frequency)
+- _Note: Be prepared to revisit this challenge to fine tune your algorithm as you progress through the other challenges. Your first shot at the algorithm may work for this challenge, but we've found that it usually needs improvement to pass 4, 5, and 6._
+
 ### __challenge 4__: detect single-character xor
+- _Note: This challenge is really just more testing of your Challenge 3 algorithm to make sure it's shipshape._
+
 ### __challenge 5__: implement repeating-key xor
+- _Note: The provided plaintext has a line break after `nimble` and no spaces at the end of lines. It is __74 bytes__ long, and the last byte of the plaintext is `0x6C` (ascii letter `l`). Here it is "unrendered":_
+
+```Burning 'em, if you ain't quick and nimble\nI go crazy when I hear a cymbal```
+
+- _Note: The provided hex-encoded ciphertext does not have any line breaks, so when comparing your output to the provided output, strip out any line breaks and spaces. Spaces/line breaks are not part of the Base64 or Hex character set, so those characters ought to be removed before processing. (`/\s/g`). Likewise for other encodings that do not have those characters._
+
 ### __challenge 6__: break repeating-key xor
+- [Hamming Distance (Wikipedia)](https://en.wikipedia.org/wiki/Hamming_distance)
+- _Note: Step 4 of the process allows for a lot of experimentation, so if you aren't getting results play around with that step. Also try breaking something you encrypted yourself with your Challenge 5 code for testing._
+
 ### __challenge 7__: aes in ecb mode
+- _Note: The challenge is not asking you to implement AES from scratch. Find your language's implementation (or a reputable module for your language) and use that._
+
 ### __challenge 8__: detect aes in ecb mode
+- [ECB Mode (Wikipedia)](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_(ECB))
+
 
 ## set 2: block crypto
 ### __challenge 9__: implement pkcs#7 padding

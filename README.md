@@ -41,7 +41,7 @@ contributions welcome! :relaxed:
 
 ### __challenge 6__: break repeating-key xor
 - [Hamming Distance (Wikipedia)](https://en.wikipedia.org/wiki/Hamming_distance)
-- _Note: Step 4 of the process allows for a lot of experimentation, so if you aren't getting results play around with that step. Also try breaking something you encrypted yourself with your Challenge 5 code for testing._
+- _Note: Step 4 of the process allows for a lot of experimentation, so if you aren't getting results play around with that step. Normalized hamming distances are relatively small numbers so remember many keys could have extremely similar outputs. Maybe try breaking something you encrypted yourself with your Challenge 5 code for testing._
 
 ### __challenge 7__: aes in ecb mode
 - _Note: The challenge is not asking you to implement AES from scratch. Find your language's implementation (or a reputable module for your language) and use that._

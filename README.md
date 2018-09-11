@@ -44,6 +44,8 @@ contributions welcome! :relaxed:
 - _Note: Step 4 of the process allows for a lot of experimentation, so if you aren't getting results play around with that step. Also try breaking something you encrypted yourself with your Challenge 5 code for testing._
 
 ### __challenge 7__: aes in ecb mode
+- [Advanced Encryption Standard (Wikipedia)](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
+- [ECB Mode (Wikipedia)](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_(ECB))
 - _Note: The challenge is not asking you to implement AES from scratch. Find your language's implementation (or a reputable module for your language) and use that._
 
 ### __challenge 8__: detect aes in ecb mode

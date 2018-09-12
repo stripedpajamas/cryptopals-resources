@@ -15,6 +15,65 @@ contributions welcome! :relaxed:
   - [challenge 6: break repeating-key xor](#challenge-6-break-repeating-key-xor)
   - [challenge 7: aes in ecb mode](#challenge-7-aes-in-ecb-mode)
   - [challenge 8: detect aes in ecb mode](#challenge-8-detect-aes-in-ecb-mode)
+- [set 2: block crypto](#set-2-block-crypto)
+  - [challenge 9: implement pkcs#7 padding](#challenge-9-implement-pkcs#7-padding)
+  - [challenge 10: implement cbc mode](#challenge-10-implement-cbc-mode)
+  - [challenge 11: an ecb/cbc detection oracle](#challenge-11-an-ecb/cbc-detection-oracle)
+  - [challenge 12: byte-at-a-time ecb decryption (simple)](#challenge-12-byte-at-a-time-ecb-decryption-(simple))
+  - [challenge 13: ecb cut-and-paste](#challenge-13-ecb-cut-and-paste)
+  - [challenge 14: byte-at-a-time ecb decryption (harder)](#challenge-14-byte-at-a-time-ecb-decryption-(harder))
+  - [challenge 15: pkcs#7 padding validation](#challenge-15-pkcs#7-padding-validation)
+  - [challenge 16: cbc bitflipping attacks](#challenge-16-cbc-bitflipping-attacks)
+
+- [set 3: block & stream crypto](#set-3-block-&-stream-crypto)
+  - [challenge 17: the cbc padding oracle](#challenge-17-the-cbc-padding-oracle)
+  - [challenge 18: implement ctr, the stream cipher mode](#challenge-18-implement-ctr,-the-stream-cipher-mode)
+  - [challenge 19: break fixed-nonce ctr mode using substitutions](#challenge-19-break-fixed-nonce-ctr-mode-using-substitutions)
+  - [challenge 20: break fixed-nonce ctr statistically](#challenge-20-break-fixed-nonce-ctr-statistically)
+  - [challenge 21: implement the mt19937 mersenne twister rng](#challenge-21-implement-the-mt19937-mersenne-twister-rng)
+  - [challenge 22: crack an mt19937 seed](#challenge-22-crack-an-mt19937-seed)
+  - [challenge 23: clone an mt19937 rng from its output](#challenge-23-clone-an-mt19937-rng-from-its-output)
+  - [challenge 24: create the mt19937 stream cipher and break it](#challenge-24-create-the-mt19937-stream-cipher-and-break-it)
+
+- [set 4: stream crypto and randomness](#set-4-stream-crypto-and-randomness)
+  - [challenge 25: break "random access read/write" aes ctr](#challenge-25-break-"random-access-read/write"-aes-ctr)
+  - [challenge 26: ctr bitflipping](#challenge-26-ctr-bitflipping)
+  - [challenge 27: recover the key from cbc with iv=Key](#challenge-27-recover-the-key-from-cbc-with-iv=Key)
+  - [challenge 28: implement a sha-1 keyed mac](#challenge-28-implement-a-sha-1-keyed-mac)
+  - [challenge 29: break a sha-1 keyed mac using length extension](#challenge-29-break-a-sha-1-keyed-mac-using-length-extension)
+  - [challenge 30: break an md4 keyed mac using length extension](#challenge-30-break-an-md4-keyed-mac-using-length-extension)
+  - [challenge 31: implement and break hmac-sha1 with an artificial timing leak](#challenge-31-implement-and-break-hmac-sha1-with-an-artificial-timing-leak)
+  - [challenge 32: break hmac-sha1 with a slightly less artificial timing leak](#challenge-32-break-hmac-sha1-with-a-slightly-less-artificial-timing-leak)
+
+- [set 5: diffie-hellman and friends](#set-5-diffie-hellman-and-friends)
+  - [challenge 33: implement diffie-hellman](#challenge-33-implement-diffie-hellman)
+  - [challenge 34: implement a mitm key-fixing attack on diffie-hellman with parameter injection](#challenge-34-implement-a-mitm-key-fixing-attack-on-diffie-hellman-with-parameter-injection)
+  - [challenge 35: implement dh with negotiated groups, and break with malicious "g" parameters](#challenge-35-implement-dh-with-negotiated-groups,-and-break-with-malicious-"g"-parameters)
+  - [challenge 36: implement secure remote password (srp)](#challenge-36-implement-secure-remote-password-(srp))
+  - [challenge 37: break srp with a zero key](#challenge-37-break-srp-with-a-zero-key)
+  - [challenge 38: offline dictionary attack on simplified srp](#challenge-38-offline-dictionary-attack-on-simplified-srp)
+  - [challenge 39: implement rsa](#challenge-39-implement-rsa)
+  - [challenge 40: implement an e=3 rsa broadcast attack](#challenge-40-implement-an-e=3-rsa-broadcast-attack)
+
+- [set 6: rsa and dsa](#set-6-rsa-and-dsa)
+  - [challenge 41: implement unpadded message recovery oracle](#challenge-41-implement-unpadded-message-recovery-oracle)
+  - [challenge 42: bleichenbacher's e=3 rsa attack](#challenge-42-bleichenbacher's-e=3-rsa-attack)
+  - [challenge 43: dsa key recovery from nonce](#challenge-43-dsa-key-recovery-from-nonce)
+  - [challenge 44: dsa nonce recovery from repeated nonce](#challenge-44-dsa-nonce-recovery-from-repeated-nonce)
+  - [challenge 45: dsa parameter tampering](#challenge-45-dsa-parameter-tampering)
+  - [challenge 46: rsa parity oracle](#challenge-46-rsa-parity-oracle)
+  - [challenge 47: bleichenbacher's pkcs 1.5 padding oracle (simple-case)](#challenge-47-bleichenbacher's-pkcs-1.5-padding-oracle-(simple-case))
+  - [challenge 48: bleichenbacher's pkcs 1.5 padding oracle (complete-case)](#challenge-48-bleichenbacher's-pkcs-1.5-padding-oracle-(complete-case))
+
+- [set 7: hashes](#set-7-hashes)
+  - [challenge 49: cbc-mac message forgery](#challenge-49-cbc-mac-message-forgery)
+  - [challenge 50: hashing with cbc-mac](#challenge-50-hashing-with-cbc-mac)
+  - [challenge 51: compression ratio side-channel attacks](#challenge-51-compression-ratio-side-channel-attacks)
+  - [challenge 52: iterated hash function multicollisions](#challenge-52-iterated-hash-function-multicollisions)
+  - [challenge 53: kelsey and schneier's expandable messages](#challenge-53-kelsey-and-schneier's-expandable-messages)
+  - [challenge 54: kelsey and kohno's nostradamus attack](#challenge-54-kelsey-and-kohno's-nostradamus-attack)
+  - [challenge 55: md4 collisions](#challenge-55-md4-collisions)
+  - [challenge 56: rc4 single-byte biases](#challenge-56-rc4-single-byte-biases)
 
 ## set 1: basics
 ### __challenge 1__: convert hex to base64
@@ -51,8 +110,15 @@ contributions welcome! :relaxed:
 
 
 ## set 2: block crypto
+
 ### __challenge 9__: implement pkcs#7 padding
+- [PKCS#5 and PKCS#7 (Wikipedia)](https://en.wikipedia.org/wiki/Padding_(cryptography)#PKCS#5_and_PKCS#7)
+- [RFC 5652](https://tools.ietf.org/html/rfc5652#section-6.3)
+
 ### __challenge 10__: implement cbc mode
+- [CBC Mode (Wikipedia)](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_Block_Chaining_(CBC))
+- [Initialization Vector (Wikipedia)](https://en.wikipedia.org/wiki/Initialization_vector)
+
 ### __challenge 11__: an ecb/cbc detection oracle
 ### __challenge 12__: byte-at-a-time ecb decryption (simple)
 ### __challenge 13__: ecb cut-and-paste

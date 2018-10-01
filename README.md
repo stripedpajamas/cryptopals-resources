@@ -172,8 +172,12 @@ contributions welcome! :relaxed:
 ### __challenge 49__: cbc-mac message forgery
 ### __challenge 50__: hashing with cbc-mac
 ### __challenge 51__: compression ratio side-channel attacks
+
 ### __challenge 52__: iterated hash function multicollisions
+- [Multicollisions in Iterated Hash Functions (Joux)](https://link.springer.com/content/pdf/10.1007%2F978-3-540-28628-8_19.pdf)
+
 ### __challenge 53__: kelsey and schneier's expandable messages
+- [Second Preimages on n-bit Hash Functions for Much Less than 2^n Work (Kelsey, Schneier)](https://www.schneier.com/academic/paperfiles/paper-preimages.pdf)
 ### __challenge 54__: kelsey and kohno's nostradamus attack
 ### __challenge 55__: md4 collisions
 ### __challenge 56__: rc4 single-byte biases

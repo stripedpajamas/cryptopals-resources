@@ -179,7 +179,9 @@ contributions welcome! :relaxed:
 
 ### __challenge 53__: kelsey and schneier's expandable messages
 - [Second Preimages on n-bit Hash Functions for Much Less than 2^n Work (Kelsey, Schneier)](https://www.schneier.com/academic/paperfiles/paper-preimages.pdf)
+
 ### __challenge 54__: kelsey and kohno's nostradamus attack
+- [Herding Hash Functions and the Nostradamus Attack (Kelsey, Kohno)](https://link.springer.com/content/pdf/10.1007%2F11761679_12.pdf)
 ### __challenge 55__: md4 collisions
 ### __challenge 56__: rc4 single-byte biases
 

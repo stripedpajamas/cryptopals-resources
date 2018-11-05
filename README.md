@@ -123,10 +123,22 @@ contributions welcome! :relaxed:
 - _Note: The provided ciphertext is Base64 encoded, so treat it as such before attempting to decrypt it._
 
 ### __challenge 11__: an ecb/cbc detection oracle
+- _Note: Besides some useful setup to familiarize yourself with AES in these two modes, this challenge is pretty much a repeat of [Challenge 8](#challenge-8-detect-aes-in-ecb-mode)._
+
 ### __challenge 12__: byte-at-a-time ecb decryption (simple)
+- _Note: I think it's helpful to think of this challenge in a server/client type scenario. Part 1 is "creating a function", which is kind of like designing an API which takes arbitrary input from a client, appends an unknown string, encrypts it using a consistent but unknown key, and returns the ciphertext to the client. Part 2 is designing a malicious client that can determine the unknown string with carefully crafted inputs sent to the "server"._
+
 ### __challenge 13__: ecb cut-and-paste
+- _Note: Similar to Challenge 12, I think it's helpful to think of this challenge in a server/client type scenario. See above note for more intuition._
+
 ### __challenge 14__: byte-at-a-time ecb decryption (harder)
+- _Note: The "random count of random bytes" should be consistent across multiple encryptions._
+
 ### __challenge 15__: pkcs#7 padding validation
+- [PKCS#5 and PKCS#7 (Wikipedia)](https://en.wikipedia.org/wiki/Padding_(cryptography)#PKCS#5_and_PKCS#7)
+- [RFC 5652](https://tools.ietf.org/html/rfc5652#section-6.3)
+- _Note: Plaintext that is already evenly divisible by the block size __does__ get padded. Read the RFC carefully._
+
 ### __challenge 16__: cbc bitflipping attacks
 
 ## set 3: block & stream crypto

@@ -3,6 +3,8 @@
 ### :raised_hand: no spoilers, just pointers :point_left:
 when I was going through the [CryptoPals](https://cryptopals.com) challenges, there were quite a few times where I needed a pointer in the right direction, but all I would find online would be coded solutions. this is a curated list of resources that don't give away the solutions, but help you understand what you need to understand to write the solution yourself.
 
+if you're looking for a pointer on a particular challenge and what's below isn't helpful, please [file an issue](https://github.com/stripedpajamas/cryptopals-resources/issues/new) so we can make these more helpful.
+
 contributions welcome! :relaxed:
 
 ## table of contents
